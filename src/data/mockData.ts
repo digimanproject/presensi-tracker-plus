@@ -1,5 +1,14 @@
 import { Class, Student } from '@/types/attendance';
 
+export const subjects = [
+  'Matematika', 'Bahasa Indonesia', 'Bahasa Inggris', 'IPA', 'IPS',
+  'Seni Budaya', 'Pendidikan Agama', 'PJOK', 'Prakarya', 'PKN'
+];
+
+export const meetingDays = [
+  'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'
+];
+
 // Generate mock data for 10 classes with 15 students each
 export const generateMockClasses = (): Class[] => {
   const classes: Class[] = [];
@@ -42,12 +51,3 @@ export const generateMockClasses = (): Class[] => {
 };
 
 export const MOCK_CLASSES = generateMockClasses();
-
-export const subjects = [
-  'Matematika', 'Bahasa Indonesia', 'Bahasa Inggris', 'IPA', 'IPS',
-  'Seni Budaya', 'Pendidikan Agama', 'PJOK', 'Prakarya', 'PKN'
-];
-
-export const meetingDays = [
-  'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'
-];

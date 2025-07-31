@@ -2,6 +2,10 @@ export interface Student {
   id: string;
   name: string;
   classId: string;
+  schoolOrigin?: string;
+  selectedSubjects?: string[];
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface AttendanceRecord {

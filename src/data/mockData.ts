@@ -19,10 +19,15 @@ export const generateMockClasses = (): Class[] => {
     const students: Student[] = [];
     for (let j = 1; j <= 15; j++) {
       const studentIndex = ((i - 1) * 15 + j - 1) % studentNames.length;
+      const now = new Date().toISOString();
       students.push({
         id: `${classId}-student-${j}`,
         name: `${studentNames[studentIndex]} ${j}`,
-        classId: classId
+        classId: classId,
+        schoolOrigin: `SD Negeri ${Math.floor(Math.random() * 50) + 1}`,
+        selectedSubjects: subjects.slice(0, Math.floor(Math.random() * 3) + 2),
+        createdAt: now,
+        updatedAt: now
       });
     }
 

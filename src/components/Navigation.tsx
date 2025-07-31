@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { GraduationCap, Users, FileText, ClipboardList } from 'lucide-react';
+import { GraduationCap, Users, FileText, ClipboardList, UserCog } from 'lucide-react';
 
 const Navigation = () => {
   const location = useLocation();
@@ -9,6 +9,7 @@ const Navigation = () => {
     { path: '/', label: 'Dashboard', icon: GraduationCap },
     { path: '/presensi', label: 'Presensi', icon: ClipboardList },
     { path: '/kelas', label: 'Kelas', icon: Users },
+    { path: '/data-siswa', label: 'Data Siswa', icon: UserCog },
     { path: '/data-presensi', label: 'Data Presensi', icon: FileText },
   ];
 

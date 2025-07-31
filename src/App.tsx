@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Index from "./pages/Index";
 import Presensi from "./pages/Presensi";
 import Kelas from "./pages/Kelas";
+import DataSiswa from "./pages/DataSiswa";
 import DataPresensi from "./pages/DataPresensi";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/presensi" element={<Presensi />} />
           <Route path="/kelas" element={<Kelas />} />
+          <Route path="/data-siswa" element={<DataSiswa />} />
           <Route path="/data-presensi" element={<DataPresensi />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
